@@ -1,0 +1,100 @@
+:root{
+    --background-color-light: rgb(252, 252, 252);
+    --white: white;
+    --off-white: rgb(254, 254, 254);
+    --shadow-1: rgba(20, 93, 240, 0.23) 0px 10px 24px;
+    --shadow-2: rgba(26, 28, 32, 0.1) 2px 2px 6px;
+    --color-blue: rgb(46, 110, 265);
+    --color-danger: rgb(220, 53, 69);
+    --dark-blue: rgb(46, 60, 255);
+    --color-green: rgb(141, 235, 186);
+    --green-gradient: linear-gradient(90deg,
+    rgba(0,255, 122, 1) 0%,
+    rgb(125, 227, 231) 45%,
+    rgb(70, 255, 190) 100%);
+    --brown-gradient: linear-gradient(90deg,
+    rgb(255, 202, 133) 0%,
+    rgb(78, 204, 243) 55%,
+    rgb(246, 189, 104) 100%);
+    --light-blue: rgb(213, 244, 253);
+}
+.bg-red{
+    background-color: rgb(240, 70, 78);
+}
+.bg-black{
+    background-color: black;
+}
+.bg-blue{
+    background-color: var(--color-blue);
+}
+hr{
+    border: 0.5px solid;
+    background-color: black;
+    color: black;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.job-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    background-color: black;
+    margin: auto 15px auto 20px;
+}
+.card{
+    border: 1.5px solid white;
+    background-color: white;
+    display: flex;
+    width: 500px;
+    height: 80px;
+    padding: auto;
+    box-shadow: var(--shadow-2);
+    border-radius: 10px;
+    transition: 430ms;
+}
+.card:hover{
+    border: 1.5px solid grey;
+}
+.card-content-parent{
+    background-color: white;
+    display: flex;
+    height: 50px;
+    width: 80%;
+    margin: auto auto auto 0px;
+}
+
+.card-content-child{
+    background-color: white;
+    padding-left: 0px;
+}
+.details-parent{
+    background-color: white;
+    display: grid;
+    place-items: center;
+    width: 120px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.details{
+    text-align: center;
+    margin-left: 0px;
+    width: 80px;
+    padding: 3px 3px 3px 3px;
+    border-radius: 15px;
+    background-color: var(--light-blue);
+}
+.info{
+    background-color: white;
+    width: 200px;
+}
+.info > .company{
+    width: 80px;
+    margin-left: 0px;
+}
+.info > .location{
+    width: 120px;
+    margin-right: 0px;
+}

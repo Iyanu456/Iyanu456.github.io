@@ -1,0 +1,9 @@
+@import "style-variables.css";
+/* FONT SIZE*/
+.text-left{
+    text-align: left;
+}
+
+.brown-gradient{
+    color: var(--brown-gradient)
+}
