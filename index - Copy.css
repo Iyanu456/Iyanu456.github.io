@@ -24,7 +24,9 @@ main{
 .bg-transparent{
     background: transparent;
 }
-
+.width-90{
+    width: 90vw;
+}
 
 /* FONT AND TYPOGRAPHY PROPERTIES */
 .bold{
@@ -65,23 +67,7 @@ main{
 .w-9{
     width: 92%;
 }
-b{
-    font-weight: 600;
-}
-nav{
-    display: flex;
-    width: 100%;
-    padding: 0.7em 2em;
-}
 
-nav > ul{
-    display: flex;
-    font-size: 0.8em;
-} 
-nav > ul > li
-{
-    margin: auto;
-}
 
 /* CUSTOM STYLES*/
 nav > ul > li > a{
@@ -108,7 +94,6 @@ nav > ul > li > a{
     padding: 0.55em;
     position: relative;
     width: fit-content;
-   
     height: fit-content;
     background-color: var(--background-color-light);
     border-radius: 10px;
@@ -199,7 +184,6 @@ input{
     min-width: 12em;
     position: relative;
     margin: 1em;
-    display: none;
 }
 .select{
     display: flex;
@@ -225,9 +209,23 @@ input{
     transform: rotate(180deg);
 }
 .menu{
+    background: rgb(250, 250, 250);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.3em;
+    position: absolute;
+    width: 100%;
     display: none;
+    top: 2.5em;
 }
-
+.menu li{
+    padding: 0.6rem 0.8rem;
+    text-overflow: "";
+    cursor: pointer;
+}
+.menu li:hover{
+    background: rgb(240, 240, 240);
+    border-radius: 0.3em;
+}
 input{
     width: 11rem;
 }
@@ -296,87 +294,5 @@ input{
 footer{
 	background-color: var(--color-primary-dark);
 	width: 100%;
-	height: 14em;
-    margin-top: 3em;
+	height: 4em;
 }
-.location{
-    display: block;
-}
-
-@media only screen and (max-width: 760px){
-    nav > ul > li{
-        display: none;
-    }
-    .menu{
-        display: block;
-    }
-    .location{
-        display: none;
-    }
-    .search-container > form > button{
-        display: none;
-        font-size: 1em;
-        padding-top: 0.4em;
-        padding-bottom: 0.4em;
-        margin: auto;
-        margin-left: 0;
-
-     
-    }
-    .search-child{
-        height: 3em;
-    }
-    .h2{
-        font-size: 1.5em;
-        text-align: center;
-    }
-  
-    .image-grid-parent > div {
-        display: block;
-        width: 80%;
-    }
-    .image-grid-parent > div > img {
-        width: 100%;
-        height: 140px;
-        object-fit: cover;
-    }
-    .search-container > form > div.vr-line{
-        display: none;
-    }
-    .testimonial{
-        font-size: 1.4em;
-    }
-     section > p.mt-50{
-        margin: auto;
-        margin-top: 2em;
-    }
-    .search-container{
-     width: 65%;
-     padding-left: 1em;
-     padding-right: auto;
-   }
-
-}
-
-@media only screen and (max-width: 500px){
-
-   .search-container{
-     width: 70%;
-   }
-    .search-container > form > div.vr-line{
-        display: none;
-    }
-
-    section{
-        margin: auto;
-        margin-top: 1em;
-        display: grid;
-        place-items: center;
-    }
-
-    section > .image-grid{
-        display: grid;
-        place-items: center;
-    }
-  
-    }

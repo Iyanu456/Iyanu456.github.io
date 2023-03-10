@@ -30,7 +30,10 @@
     rgb(246, 189, 104) 100%);
     --light-blue: rgb(213, 244, 253);
 }
-
+.icon{
+    height: 1.7em;
+    width: 1.7em;
+}
 .alert{
     padding: 1.5em 2em 1.5em 2em;
     height: fit-content;

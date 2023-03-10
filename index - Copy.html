@@ -10,22 +10,25 @@
 	<title>jobsite</title>
 </head>
 <body>
+	<header class="grid-center">
+        <div class="flex width-90 mt-15 mb-15">
+            <nav class="m-auto ml-0">
+                <ul class="flex g-50 small">
+                    <li class="bold">Company Name</li>
+                    <li class="h5 m-auto"><a href="#" id="active">Home</a></li>
+                    <li class="h5 m-auto"><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
 
-    <nav>
-        <p class="mr-50"><b>Company name</b></p>
-        <ul class="g-50">
-            <li><a href="#" id="active">Home</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
-        <ul class="g-20 m-auto mr-0">
-            <li><button class="h5 btn btn-primary"><b>Sign up</b></button></li>
-            <li class="mt-auto mb-auto"><button class="h5 bold">Log in</button></li>
-        </ul>
-        <img src="./Assets/menu-1.svg" class="icon menu">
-    </nav>
-
-    
-     
+            <ul class="flex g-20 m-auto mr-0">
+                <li>
+                    <button class="h5 bold btn btn-primary">
+                        <span>Sign up</span>
+                    </button>
+                <li class="mt-auto mb-auto"><button class="h5 bold">Log in</button></li>
+            </ul>
+        </div>
+     </header>
 
     <div class="search grid-center"></div>
     <div class="main-container bg-transparent">
@@ -35,7 +38,7 @@
         </div>
     </div>
 
-     <div class="search-container bt-50">
+     <div class="search-container bt-50 mb-50">
         <form class="bg-transparent">
 
             <div class="search-bar bg-transparent mr-0" id="Search">
@@ -45,7 +48,7 @@
 
             <div class=" ml-10 vr-line"></div>
 
-            <div class="location search-bar bg-transparent m-auto ml-20">
+            <div class="search-bar bg-transparent m-auto ml-20">
                 <div class="h5 dropdown">
                     <div class="select">
                         <span class="selected">Select Location</span>
@@ -61,9 +64,8 @@
             </div>
 
             <button type="submit" class="h3 btn btn-primary mr-0">Search</button>
-        </form>
     </div>
-    <section class="m-auto w-9">
+    <section class="m-auto mt-50 w-9">
         <p class="mt-50 mb-10 bold">Featured Jobs</p>
         <div class="image-grid">
             <div class="card-child">
@@ -99,13 +101,13 @@
                 <div class="article-text">Liberty Logistic Park</div>
             </div>
         </div>
-        <div class="image-grid-parent grid-center mt-30">
+        <div class="grid-center mt-30">
             <div class="flex mb-30">
                 <img class="img-grid-child" src="./image_6.jpg"></img>
                 <div class="testimonial">"Find a new carrer path"</div>
             </div>
         </div>
-        <div class="image-grid-parent grid-center mt-30">
+        <div class="grid-center mt-30">
             <div class="flex mb-30">
                 <div class="testimonial">"Find a new carrer path"</div>
                 <img class="img-grid-child" src="./image_5.jpg"></img>
